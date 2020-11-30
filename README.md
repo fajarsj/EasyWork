@@ -58,5 +58,6 @@ yarn lint
 
 ```
 
-### Thank you
+### Eslint
+
 ```
