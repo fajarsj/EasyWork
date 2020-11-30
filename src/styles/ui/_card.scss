@@ -1,0 +1,14 @@
+.card {
+  box-shadow: rgba($black, 0.075) 0px 3px 10px 1px;
+  border-radius: 6px;
+
+  &__body {
+    padding: 1.875rem 1.25rem;
+  }
+
+  @media (max-width: 767.98px) {
+    &__body {
+      padding: 1.25rem 0.9375rem;
+    }
+  }
+}

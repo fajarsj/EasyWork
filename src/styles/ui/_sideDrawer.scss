@@ -1,0 +1,76 @@
+.side-drawer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: $primary;
+  padding: 1.875rem;
+  box-sizing: border-box;
+  transition: transform 0.25s ease-out;
+  background-image: url("../assets/images/2-banner/banner-rounded-001.svg");
+  background-position: calc(50% - 50px) calc(100% + 140px);
+  background-repeat: no-repeat;
+
+  &__toggle {
+    width: 40px;
+    height: 60px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+
+  &__toggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+  }
+
+  @media (min-width: 768px) {
+    &__toggle {
+      display: none;
+    }
+  }
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &.closed {
+    transform: translateX(-100%);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.75rem;
+
+    svg {
+      fill: $white;
+      width: 20px;
+    }
+  }
+
+  .navigation-items {
+    width: 100%;
+    flex-direction: column;
+
+    &__item {
+      margin-bottom: 1.875rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .side-drawer {
+    display: none;
+  }
+}

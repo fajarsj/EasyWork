@@ -1,0 +1,17 @@
+.layout {
+  &__container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+}

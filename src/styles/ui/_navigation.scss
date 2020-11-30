@@ -1,0 +1,35 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation-items {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+
+  &__item {
+    a {
+      font-size: 1.25rem;
+      color: $white;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navigation-items {
+    width: 60%;
+  }
+}

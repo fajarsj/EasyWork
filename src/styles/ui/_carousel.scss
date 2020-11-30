@@ -1,0 +1,63 @@
+.slick-slider {
+  .slick-dots {
+    margin-top: 45px;
+    position: static;
+
+    li {
+      margin: 0 10px;
+    }
+
+    .slick-dot {
+      width: 20px;
+      height: 20px;
+      background-color: $primary;
+      border-radius: 50%;
+      opacity: 0.25;
+      transition: all ease 0.25s;
+    }
+
+    .slick-active {
+      .slick-dot {
+        opacity: 1;
+      }
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    all: unset;
+    &::before {
+      display: none;
+    }
+
+    .icon {
+      transition: all 0.25s ease;
+    }
+  }
+
+  .slick-next {
+    .icon {
+      position: absolute;
+      top: -135px;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+
+  .slick-prev {
+    .icon {
+      position: absolute;
+      top: -135px;
+      right: 75px;
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+  }
+
+  .slick-disabled {
+    .icon {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

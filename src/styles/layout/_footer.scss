@@ -1,0 +1,80 @@
+.footer {
+  padding: 40px 0;
+  background-color: $primary;
+  background-image: url("../assets/images/2-banner/banner-rounded-001.svg"),
+    url("../assets/images/2-banner/banner-rounded-002.svg");
+  background-position: -75px -35px, calc(100% + 240px) -50px;
+  background-repeat: no-repeat;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+
+    > div {
+      margin-right: 7.5%;
+      max-width: 30%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .heading {
+    color: $white;
+    font-weight: $s-bold-weight;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin-right: 1.875rem;
+    }
+
+    .heading {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__address,
+  &__additional-info {
+    .heading,
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 0;
+      line-height: 1.25;
+    }
+  }
+
+  &__additional-info {
+    p {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    background-position: -500px 100%, calc(100% + 400px) 100%;
+
+    .container {
+      flex-direction: column;
+
+      > div {
+        margin-right: 0;
+        margin-bottom: 3.75rem;
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+
+    &__company {
+      justify-content: center;
+    }
+  }
+}

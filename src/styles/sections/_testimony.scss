@@ -1,0 +1,86 @@
+.testimony {
+  margin-bottom: 95px;
+
+  &__header {
+    display: flex;
+
+    .heading {
+      max-width: 450px;
+    }
+
+    .icon {
+      margin: 10px 45px 0 0;
+    }
+  }
+
+  &-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.875rem;
+
+    &__picture {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-right: 1.25rem;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    &__title {
+      h6 {
+        margin-bottom: 0rem;
+        color: $black;
+      }
+    }
+  }
+
+  &-description {
+    font-size: 1.125rem;
+    color: $black;
+  }
+
+  &__carousel {
+    margin-top: 50px;
+
+    .slick-list {
+      width: 150%;
+    }
+
+    .card {
+      margin: 10px 1.875rem 10px 10px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__carousel {
+      margin-top: 30px;
+
+      .slick-list {
+        width: 100%;
+      }
+
+      .card {
+        margin: 10px 10px 10px 10px;
+      }
+    }
+
+    &__header {
+      .icon {
+        margin: 10px 20px 0 0;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    &__carousel {
+      .slick-list {
+        width: 125%;
+      }
+    }
+  }
+}

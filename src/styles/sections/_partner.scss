@@ -1,0 +1,29 @@
+.partner {
+  text-align: center;
+  margin-bottom: 95px;
+
+  .heading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__logo {
+    width: 100%;
+    margin: 0 -0.9375rem;
+
+    img {
+      display: inline-block;
+      margin: 0 0.9375rem 1.875rem;
+      min-width: calc(12.5% - (0.9375rem * 2));
+      max-width: calc(12.5% - (0.9375rem * 2));
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__logo {
+      img {
+        min-width: calc(25% - (0.9375rem * 2));
+        max-width: calc(25% - (0.9375rem * 2));
+      }
+    }
+  }
+}

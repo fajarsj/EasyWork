@@ -1,0 +1,72 @@
+.header {
+  background-color: $primary;
+  padding-top: 40px;
+  height: calc(768px - 90px);
+  display: flex;
+  background-image: url("../assets/images/2-banner/banner-rounded-001.svg"),
+    url("../assets/images/2-banner/banner-rounded-002.svg");
+  background-position: -75px 100%, calc(100% + 240px) 100%;
+  background-repeat: no-repeat;
+  margin-bottom: calc(60px + 90px);
+
+  .container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    margin-top: auto;
+    position: relative;
+    bottom: -60px;
+
+    &__description {
+      width: calc(50% + 50px);
+      padding-right: 50px;
+
+      p {
+        color: $white;
+      }
+    }
+
+    &__image {
+      width: calc(50% - 50px);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: calc(60px + 45px);
+
+    &__content {
+      margin-top: 3.75rem;
+      flex-direction: column;
+
+      &__description {
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+      }
+
+      &__image {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    height: 100vh;
+    background-position: -500px 100%, calc(100% + 400px) 100%;
+    &__content {
+      margin-top: 90px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    height: calc(100vh - 90px);
+  }
+}

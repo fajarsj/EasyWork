@@ -1,0 +1,94 @@
+.icon {
+  svg {
+    fill: $icon-content-default;
+  }
+
+  &--circle {
+    min-width: 50px;
+    width: 50px;
+    min-height: 50px;
+    height: 50px;
+    background-color: $icon-default;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 26px -12px rgba($icon-default, 0.42),
+      0 4px 23px 0 rgba($icon-default, 0.12),
+      0 8px 10px -5px rgba($icon-default, 0.2);
+  }
+
+  &--secondary {
+    @at-root {
+      .icon--circle#{&} {
+        background-color: $icon-secondary;
+        box-shadow: 0 14px 26px -12px rgba($icon-secondary, 0.42),
+          0 4px 23px 0 rgba($icon-secondary, 0.12),
+          0 8px 10px -5px rgba($icon-secondary, 0.2);
+      }
+    }
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &--danger {
+    @at-root {
+      .icon--circle#{&} {
+        background-color: $icon-danger;
+        box-shadow: 0 14px 26px -12px rgba($icon-danger, 0.42),
+          0 4px 23px 0 rgba($icon-danger, 0.12),
+          0 8px 10px -5px rgba($icon-danger, 0.2);
+      }
+    }
+
+    svg {
+      fill: $icon-content-danger;
+    }
+  }
+
+  &--warning {
+    @at-root {
+      .icon--circle#{&} {
+        background-color: $icon-warning;
+        box-shadow: 0 14px 26px -12px rgba($icon-warning, 0.42),
+          0 4px 23px 0 rgba($icon-warning, 0.12),
+          0 8px 10px -5px rgba($icon-warning, 0.2);
+      }
+    }
+
+    svg {
+      fill: $icon-content-warning;
+    }
+  }
+
+  &--info {
+    @at-root {
+      .icon--circle#{&} {
+        background-color: $icon-info;
+        box-shadow: 0 14px 26px -12px rgba($icon-info, 0.42),
+          0 4px 23px 0 rgba($icon-info, 0.12),
+          0 8px 10px -5px rgba($icon-info, 0.2);
+      }
+    }
+
+    svg {
+      fill: $icon-content-info;
+    }
+  }
+
+  &--light {
+    svg {
+      fill: $white;
+    }
+  }
+
+  &--sm {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    padding: 5px;
+  }
+}

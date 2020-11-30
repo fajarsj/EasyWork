@@ -1,0 +1,56 @@
+.button {
+  padding: 0.75rem 1.875rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-decoration: none;
+  letter-spacing: 0;
+  border-radius: 6px;
+  border-width: 0;
+  outline-width: 0;
+  color: $button-content-default;
+  background-color: $button-default;
+  border-color: $button-default;
+  box-shadow: 0 2px 2px 0 rgba($button-default, 0.14),
+    0 3px 1px -2px rgba($button-default, 0.2),
+    0 1px 5px 0 rgba($button-default, 0.12);
+  cursor: pointer;
+  font-weight: $bold-weight;
+
+  &--warning {
+    background-color: $button-warning;
+    border-color: $button-warning;
+    box-shadow: 0 2px 2px 0 rgba($button-warning, 0.14),
+      0 3px 1px -2px rgba($button-warning, 0.2),
+      0 1px 5px 0 rgba($button-warning, 0.12);
+    color: $button-content-warning;
+  }
+
+  &--primary {
+    background-color: $button-primary;
+    border-color: $button-primary;
+    box-shadow: 0 2px 2px 0 rgba($button-primary, 0.14),
+      0 3px 1px -2px rgba($button-primary, 0.2),
+      0 1px 5px 0 rgba($button-primary, 0.12);
+    color: $white;
+  }
+
+  &--primary {
+    background-color: $button-primary;
+    border-color: $button-primary;
+    box-shadow: 0 2px 2px 0 rgba($button-primary, 0.14),
+      0 3px 1px -2px rgba($button-primary, 0.2),
+      0 1px 5px 0 rgba($button-primary, 0.12);
+    color: $white;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    box-shadow: none;
+    color: $secondary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
