@@ -56,8 +56,4 @@ To run linting, run:
 yarn lint
 ```
 
-```
-
-### Eslint
-
-```
+### Thank you
